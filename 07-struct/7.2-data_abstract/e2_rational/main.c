@@ -1,18 +1,6 @@
-#include <stdio.h>
+#include "rational.h"
 
-typedef struct rational
-{
-	int a;
-	int b;
-}RA;
-
-RA add_rational(RA, RA);
-RA sub_rational(RA, RA);
-RA mul_rational(RA, RA);
-RA div_rational(RA, RA);
-void print_rational(RA);
-
-int main()
+int main(void)
 {
 	RA a = make_rational(1, 8); /* a=1/8 */
 	RA b = make_rational(-1, 8); /* b=-1/8 */
