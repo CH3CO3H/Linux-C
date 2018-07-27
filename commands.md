@@ -36,6 +36,66 @@
 
 `$ ld hello.o -o hello`
 
+### 18.5 ELF
+
+`$ readelf -a max.o`
+
+`$ hexdump -C max.o`
+
+`$ objdump -d max.o`
+
+`$ readelf -a max`
+
+`$ objdump -d max`
+
+## 19 汇编与C之间的关系
+
+### 19.1 函数调用
+
+`$ gcc main.c -g`
+
+`$ objdump -dS a.out`
+
+`$ gcc -S main.c`
+
+`(gdb) disassemble`
+
+`(gdb) si`
+
+`(gdb) info registers`
+
+`(gdb) x/20 $esp`
+
+### 19.2 `main`函数和启动例程
+
+`$ gcc -S main.c`
+
+`$ gcc -c main.s`
+
+`$ gcc main.o`
+
+`$ ld /usr/lib/crt1.o /usr/lib/crti.o main.o -o main -lc -dynamic-linker /lib/ld-linux.so.2`
+
+`$ nm /usr/lib/crt1.o`
+
+`$ nm /usr/lib/crti.o`
+
+`$ gcc -v main.c -o main`
+
+## 20 链接详解
+
+### 20.1 多目标文件的链接
+
+`$ ld --verbose`
+
+## 21 预处理
+
+### 21.2. 宏定义
+
+`$ gcc -E main.c`
+
+`$ cpp main.c`
+
 ## 25 Clib
 
 ### 25.2 stdio
