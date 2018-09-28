@@ -1,20 +1,20 @@
-# 字符串操作函数
+# string handle func
 
 `#include <string.h>`
 
-## 1. 初始化
+## 1. initial
 
 ```c
 void* memset(void* s, int c, size_t n);
 ```
 
-## 2. 取长度
+## 2. length
 
 ```c
 size_t strlen(const char* s);
 ```
 
-## 3. 拷贝
+## 3. copy
 
 ```c
 char* strcpy(char* dest, const char* src);
@@ -24,14 +24,14 @@ void* memmove(void* dest, const void* src, size_t n);
 char* strdup(const char* s);	//POSIX
 ```
 
-## 4. 连接
+## 4. connect
 
 ```c
 char* strcat(char* dest, const char* src);
 char* strncat(char* dest, const char* src, size_t n);
 ```
 
-## 5. 比较
+## 5. compare
 
 ```c
 int memcmp(const void* s1, const void* s2, size_t n);
@@ -42,7 +42,7 @@ int strcasecmp(const char* s1, const char* s2);
 int strncasecmp(const char* s1, const char* s2, size_t n);
 ```
 
-## 6. 搜索
+## 6. search
 
 ```c
 char* strchr(const char* s, int c);
@@ -50,7 +50,7 @@ char* strrchr(const char* s, int c);
 char* strstr(const char* haystack, const char* needle);
 ```
 
-## 7. 分割
+## 7. split
 
 ```c
 char* strtok(char* str, const char* delim);
