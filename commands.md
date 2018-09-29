@@ -1,8 +1,25 @@
-## 1 程序的基本概念
+## 1 basic
 
-### 1.4 第一个程序
+### compile
 
-`$ gcc -Wall main.c`
+```
+$ gcc -Wall main.c
+$ c99 -Wall -o getting-started getting-started.c -lm
+$ clang -Wall -lm -o getting-started getting-started.c
+$ gcc -std=c99 -Wall -lm -o getting-started getting-started.c
+$ icc -std=c99 -Wall -lm -o getting-started getting-started.c
+```
+### run
+
+`$ ./getting-started`
+
+### help
+
+```
+$ apropos printf
+$ man printf
+$ man 3 printf
+```
 
 ## 3 简单函数
 
@@ -88,6 +105,10 @@
 
 `$ ld --verbose`
 
+### 20.3 静态库
+
+`$ gcc -print-search-dirs`
+
 ## 21 预处理
 
 ### 21.2. 宏定义
@@ -120,21 +141,21 @@
 
 ### 31.2 Shell 如何执行命令
 
-man bash-builtins
+`$ man bash-builtins`
 
-chmod +x script.sh
+`$ chmod +x script.sh`
 
-./script.sh
+`$ ./script.sh`
 
-/bin/sh ./script.sh
+`$ /bin/sh ./script.sh`
 
-/bin/sed -f ./script.sh
+`$ /bin/sed -f ./script.sh`
 
 (cd ..; ls -l)
 
-source ./script.sh
+`$ source ./script.sh`
 
-. ./script.sh
+`$ . ./script.sh`
 
 ### 31.3 Shell 的基本语法
 
