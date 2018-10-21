@@ -4,11 +4,11 @@
 
 ### 1. compile and run
 
-### 2. basic types
+### 2. types
 
-### 3. aggregate types
+### 3. values
 
-### 4. control flow
+### 4. express
 
 ### 5. function
 
@@ -23,6 +23,14 @@
 ## 06-makefile
 
 ## 07-stdlib
+
+### math
+
+### string
+
+### io
+
+### time
 
 ## 08-file
 
