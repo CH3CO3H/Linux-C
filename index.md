@@ -10,7 +10,9 @@
 
 ### 4. express
 
-### 5. function
+### 5. function 
+
+### 6. array
 
 ## 02-coding style
 
