@@ -8,3 +8,4 @@ length of an array _A_ : `sizeof A/sizeof A[0]`
 
 `{1, 3, 5, 7, }[i]`
 
+Evaluation of an array returns &A\[0].

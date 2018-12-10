@@ -38,3 +38,15 @@
 | time_t    | time.h   | time(0), difftime(t1, t0) | calendar time in seconds since epoch         |  |
 | clock_t   | time.h   | clock() | processor time                               |               |
 
+## typedef
+
+forward declaration:
+
+```c
+typedef struct animalStruct animalStruct;
+```
+
+Identifier names terminating with \_t are reserved.
+
+Don't hide pointers in a **typedef**.
+

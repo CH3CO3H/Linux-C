@@ -1,3 +1,5 @@
+# Compile and run
+
 ## compile
 
 ```
@@ -19,4 +21,18 @@ $ apropos printf
 $ man printf
 $ man 3 printf
 ```
+
+## Man Page
+
+| section | description                                 |
+| ------- | ------------------------------------------- |
+| 1       | Executable programs or shell commands       |
+| 2       | System calls                                |
+| 3       | Library calls                               |
+| 4       | Special files (usually found in /dev)       |
+| 5       | File formats and conventions eg /etc/passwd |
+| 6       | Games                                       |
+| 7       | Miscellaneous                               |
+| 8       | System administration commands              |
+| 9       | Kernel routines                             |
 
