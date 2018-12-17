@@ -137,6 +137,16 @@ $ man 3 printf
 
 `$ debugfs fs`
 
+## 30 PROCESS
+
+### 30.3 control
+
+`(gdb) b 17`
+
+`(gdb) set follow-fork-mode child`
+
+`(gdb) set follow-fork-mode parent`
+
 ## 31 Shell 脚本
 
 ### 31.2 Shell 如何执行命令
