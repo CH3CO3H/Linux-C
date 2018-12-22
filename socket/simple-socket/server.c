@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include <unistd.h>
 #include <sys/socket.h>
+#include <arpa/inet.h>
 #include <netinet/in.h>
 
 #define MAXLINE 80
@@ -14,9 +16,9 @@ int main(void) {
 	int listenfd, connfd;
 	char buf[MAXLINE];
 	char str[INET_ADDRSTRLEN];
-	int i, n;
+	int n;
 	listenfd=socket(AF_INET, SOCK_STREAM, 0);
-	bzero(&servaddr, sizeof(servaddr));
+	memset(&servaddr, 0, sizeof(servaddr));
 	servaddr.sin_family=AF_INET;
 	servaddr.sin_addr.s_addr=htonl(INADDR_ANY);
 	servaddr.sin_port=htons(SERV_PORT);
